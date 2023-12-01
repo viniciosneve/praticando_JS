@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Super_carros</title>
+</head>
+<body>
+    <div id="imagem_fundo_topo_fixado">
+        <div id="imagem_fundo_topo">
+            <div id="imagens_topo_pagina">
+
+                
+                <div>
+                    <script>
+                        
+                        function imagem1(){
+                            document.getElementById('imagens_topo_pagina').style.backgroundImage= 'url(imagem_1.jpg)';
+                            document.getElementById('imagem_fundo_topo').style.backgroundImage= 'url(imagem_1.jpg)';
+                        }
+
+                        function imagem2(){
+                            document.getElementById('imagens_topo_pagina').style.backgroundImage= 'url(imagem_2.jpg)';
+                            document.getElementById('imagem_fundo_topo').style.backgroundImage= 'url(imagem_2.jpg)';}
+
+                        function imagem3(){
+                            document.getElementById('imagens_topo_pagina').style.backgroundImage= 'url(imagem_3.jpg)';
+                            document.getElementById('imagem_fundo_topo').style.backgroundImage= 'url(imagem_3.jpg)';
+                        }
+
+                        function imagem4(){
+                            document.getElementById('imagens_topo_pagina').style.backgroundImage= 'url(imagem_4.jpg)';
+                            document.getElementById('imagem_fundo_topo').style.backgroundImage= 'url(imagem_4.jpg)';
+                        }
+                        
+                        let imagens= [imagem1, imagem2, imagem3, imagem4];
+                        let selecionandoimagem= 0;
+
+                        function trocandofundotopo(){
+                            imagens[selecionandoimagem]();
+                            selecionandoimagem++;
+
+                            if (selecionandoimagem == 4){
+                                selecionandoimagem -= 4;
+                            }
+
+                            setTimeout(trocandofundotopo, 5000);
+                            set
+                        }
+                        trocandofundotopo();
+                        
+                    </script>
+                </div>
+
+            </div>
+        </div>        
+        <!--botoes que ao clicar muda a foto-->
+
+        <div id="back_botao_redondo_imagens_topo_pagina">
+
+            <div class="botao_redondo_imagens_topo_pagina_div ">
+
+                <button class="botao_redondo_imagens_topo_pagina" onclick="imagem1()">
+                </button>
+
+            </div>
+            
+            <div class="botao_redondo_imagens_topo_pagina_div">
+
+                <button class="botao_redondo_imagens_topo_pagina" onclick="imagem2()">
+                </button>
+
+            </div>
+            
+            <div class="botao_redondo_imagens_topo_pagina_div">
+
+                <button class="botao_redondo_imagens_topo_pagina" onclick="imagem3()">
+                </button>
+
+            </div>
+            
+            <div class="botao_redondo_imagens_topo_pagina_div"> 
+
+                <button class="botao_redondo_imagens_topo_pagina" onclick="imagem4()">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="imagemfundoprimeirotexto">
+        <div id="primeirotexto">
+            <p>Uma das modificações mais frequentes em veículos é, sem dúvidas, o rebaixamento do veículo.</p>
+
+            <p>Nesse texto, você ficará por dentro dessa alteração: como regularizar seu veículo após a modificação, e quais as penalidades caso não o faça.<br>
+            Vamos iniciar com o dispositivo do Código de Trânsito Brasileiro que proíbe a alteração não registrada no documento do veículo.</p>
+                
+            <p>Alteração de característica sem autorização<br>
+            Art. 230. Conduzir o veículo:VII – com a cor ou característica alterada;Infração – grave;<br>
+            Penalidade – multa;<br>Medida administrativa – retenção do veículo para regularização;<br>
+            Note que o Código de Trânsito aplica a penalidade quando houver uma característica alterada no veículo. Mas como saber se a característica foi ou não alterada? Simples: conferindo o documento do veículo (CRLV). Se no CRLV constar a alteração da característica, tal como o rebaixamento da suspensão, então o automóvel está regular.</p>
+                
+            <p>Qual o limite ao rebaixar o veículo?</p>
+                
+            <p>Atualmente está em vigor a Resolução nº 479/2014 do CONTRAN, que dispõe em seu artigo 6º o seguinte:</p>
+                
+            <p>Art. 6º Os veículos de passageiros e de cargas, exceto veículos de duas ou três rodas e quadriciclos, usados, que sofrerem alterações no sistema de suspensão, ficam obrigados a atender aos limites e exigências previstos nesta Resolução, cabendo a cada entidade executora das modificações e ao proprietário do veículo a responsabilidade pelo atendimento às exigências em vigor.</p>
+                
+            <p>I – o sistema de suspensão poderá ser fixo ou regulável.<br>
+            II – A altura mínima permitida para circulação deve ser maior ou igual a 100 mm, medidos verticalmente do solo ao ponto mais baixo da carroceria ou chassi, conforme anexo I.<br>
+            III – O conjunto de rodas e pneus não poderá tocar em parte alguma do veículo quando submetido ao teste de esterçamento.<br>
+            Percebam que o inciso II dispõe que a altura mínima para circulação (não há altura mínima se o automóvel está estacionado) é de 100 milímetros, ou 10 centímetros, e deve ser medido do solo até o ponto mais baixo da carroceria ou chassi.</p>
+                
+            <p>Além disso, os pneus não podem entrar em contato com nenhuma parte do veículo ao se girar o volante para ambos os lados (esterçamento).</p>
+                
+            <p>Posso ter o carro guinchado se não respeitar esse limite?</p>
+                
+            <p>O veículo rebaixado que não tenha autorização para essa alteração não poderá ser guinchado. Isso porque a medida administrativa prevista pelo artigo 230 é a retenção do veículo.</p>
+                
+            <p>A retenção, como dispõe o artigo 270 do CTB, pode ser feita para regularizar a falha ou alteração. A retenção é a simples imobilização do veículo, e não seu recolhimento a um depósito. O parágrafo segundo do artigo 270 diz que:<br>
+            Não sendo possível sanar a falha no local da infração, o veículo, desde que ofereça condições de segurança para circulação, poderá ser liberado e entregue a condutor regularmente habilitado, mediante recolhimento do Certificado de Licenciamento Anual, contra apresentação de recibo, assinalando-se prazo razoável ao condutor para regularizar a situação, para o que se considerará, desde logo, notificado.</p>
+                
+            <p>Como não é possível regularizar no próprio local um carro rebaixado sem autorização, o veículo poderá ser liberado, mas será recolhido o Certificado de Licenciamento Anual. Para retirar o documento, somente com a regularização da situação, seja sanando a falha, seja vistoriando o veículo no Detran.</p>
+                
+            <p>Como regularizar a situação do veículo?</p>
+                
+            <p>A alteração de rebaixamento somente poderá ser feita após a autorização do Detran. Ou seja, você não pode rebaixar o veículo sem a autorização e depois pedir a regularização dele.</p>
+                
+            <p>Primeiramente, deve-se verificar se é viável essa modificação no seu veículo. Se for, o próximo passo é solicitar uma autorização ao Detran para essa alteração, pagando as taxas devidas (cada Estado possui seus valores, que atualizam quase que anualmente). Após isso, leve o veículo a um mecânico de sua confiança, e então solicite uma vistoria em alguma oficina credenciada pelo INMETRO.</p>
+                
+            <p>Com o veículo vistoriado, basta aguardar o Certificado de Segurança Veicular (CSV), que será registrado no Certificado de Registro e de Licenciamento do Veículo, no campo observações.</p>
+                
+            <p>Resumindo os passos:</p>
+                
+            <p>Verificar a viabilidade de rebaixar o veículo<br>
+            Solicitar a alteração ao Detran, pagando as taxas<br>
+            Efetuar as alterações em um mecânico<br>
+            Realizar a vistoria em oficina credenciada no INMETRO<br>
+            Comparecer ao Detran para obter o registro do CSV.<br>
+            Recorrendo de uma multa por alteração de característica<br>
+                
+            <p>Se você possui um veículo com característica alterada e está licenciado corretamente, e ainda assim foi autuado por um agente de trânsito, então você poderá interpor um recurso para anular a multa.</p>
+        </div>
+    </div>
+
+    <div id="bloco_carros">
+        <div class="carros" id="carroesquerdaanimacao">
+
+            <div id="SkylineGT_RR34Bayside"></div>
+
+            <div class="Nomecarro">
+                <h1 class="nomecarro">Skyline GT-R R34 Bayside</h1>
+            </div>
+
+            <a href="GT-R_R34_Bayside-blue.html" class="nomecarro">Aperte para ver mais</a>
+
+        </div>
+
+
+        <div class="carros" id="carrosmeio1animacao">
+
+            <div id="FordMaverick"></div>
+
+            <div class="Nomecarro">
+                <h1 class="nomecarro">Ford Maverick</h1>
+            </div>
+
+            <p class="nomecarro">Aperte para ver mais</p>
+
+        </div>
+
+
+        <div class="carros" id="carrosmeio2animacao">
+
+            <div id="ZXTwin_Turbo"></div>
+
+            <div class="Nomecarro">
+                <h1 class="nomecarro">1996 300ZX Twin-Turbo</h1>
+            </div>
+
+            <p class="nomecarro">Aperte para ver mais</p>
+
+        </div>
+
+
+        <div class="carros" id="carrodireitaanimacao">
+
+            <div id="ChevroletOpaladeLuxo"></div>
+
+            <div class="Nomecarro">
+                <h1 class="nomecarro">1973 Chevrolet Opala de Luxo</h1>
+            </div>
+
+            <p class="nomecarro">Aperte para ver mais</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

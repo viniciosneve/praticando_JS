@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+body{
+    margin: 0%;
+    padding: 0%;
+
+    background-color: rgb(141, 141, 141);
+}
+/*
+Parte de cima da pagina que fica passando imagens, que tem botões em baixo que ao clicar você troca de imagem.
+*/
+  
+/* Define a animação das imagens que fica no topo da pagina*/
+@keyframes entrar-direita {
+    0%{ transform: translateX(100%);}
+
+    50%{ transform: translateX(0);}
+
+    100%{ transform: translateX(-100%);}
+  }
+
+#imagem_fundo_topo_fixado{
+    background-image: url(https://img.freepik.com/fotos-premium/piloto-de-corrida-de-formula-1-no-capacete-antes-do-inicio-da-competicao-ai-gerada_201606-6177.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+/*As imagens que fica no fundo em movimento no topo, junto com as imagens que fica em cima e em movimento no topo*/
+#imagem_fundo_topo{
+/*tamanho e local*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+/*centralizando imagem*/
+    background-image: url(imagem_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+/*animação*/
+    animation: entrar-direita 5s infinite;
+}
+
+/*Essas são as imagens que fica no topo, por cima das imagens que estão no fundo em movimento*/
+#imagens_topo_pagina{
+/*tamanho e local*/
+    justify-content: center;
+
+    padding-top: 500px;
+
+    margin-right: 70px;
+    margin-left: 70px;
+
+/*centralizando imagem*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(imagem_1.jpg);
+
+/*animação*/
+    animation: entrar-direita 5s infinite;
+}
+
+/*Esse é o bloco que obtem os quatros botões redondos que troca as imagens ao aperta em uma delas.*/
+#back_botao_redondo_imagens_topo_pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(-55px);
+
+/*esse é para ajustar os botões para ficarem no tamanho certo*/
+}
+.botao_redondo_imagens_topo_pagina{
+    border-radius: 50%;
+    padding: 3px;
+    margin-left: 10px;
+/*Aqui é para quando a pessoa passa o mouse por cima do botão e o botão aumentar de tamanho*/
+}
+.botao_redondo_imagens_topo_pagina:hover{
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/*
+Um artigo falando algo sobre os carros ou coisas que motorista fazendo que pode ser benefico ou não.
+*/
+
+#imagemfundoprimeirotexto{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18rNLJQg3ZBJ3IZGfeq5BrP5tNRqCjt127w&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#primeirotexto{
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+/*Alguns modelos de carros que ao clicar leva para uma descrição melhor sobre o mesmo.*/
+
+#bloco_carros{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: white;
+
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+}
+
+.nomecarro{
+    color: white;
+}
+
+.carros{
+    border: 10px solid rgb(105, 105, 105); 
+    background-color: rgb(105, 105, 105);
+
+    text-align: center;
+    text-decoration: double;
+}
+
+@keyframes crescendoimagem{
+    0%{ transform: rotate(180deg); }
+    50%{ transform: scale(1.5) translateX(25px); border: 10px solid black; background-color: black;}
+    100%{ transform: rotate(360deg) scale(1.5) translateX(25px); border: 10px solid black; background-color: black;}
+}
+
+@keyframes crescendoimagemesquerda{
+    0%{ transform: rotate(180deg); }
+    50%{ transform: scale(1.5) translateX(25px); border: 10px solid black; background-color: black;}
+    100%{ transform: rotate(360deg) scale(1.5) translateX(25px); border: 10px solid black; background-color: black;}
+}
+
+@keyframes crescendoimagemdireita{
+    0%{ transform: rotate(180deg); }
+    50%{ transform: scale(1.5) translateX(-25px); border: 10px solid black; background-color: black;}
+    100%{ transform: rotate(360deg) scale(1.5) translateX(-25px); border: 10px solid black; background-color: black;}
+}
+
+.Nomecarro{
+    font-size: 8px;
+}
+
+#SkylineGT_RR34Bayside{
+    padding: 100px;
+
+    background-image: url("GT-R_R34_Bayside-blue.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+    transform: s;
+}
+
+#FordMaverick{
+    padding: 100px;
+    
+    background-image: url("Ford_Maverick.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+#ZXTwin_Turbo{
+    padding: 100px;
+    
+    background-image: url("1991_300ZX_Twin_Turbo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+#ChevroletOpaladeLuxo{
+    padding: 100px;
+    
+    background-image: url("1973_chevrolet_Opala_de_luxo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+#carroesquerdaanimacao:hover{
+    animation: crescendoimagemesquerda 1s both ;
+}
+
+#carrosmeio1animacao:hover{
+    animation: crescendoimagem 1s both;
+}
+
+#carrosmeio2animacao:hover{
+    animation: crescendoimagem 1s both;
+}
+
+#carrodireitaanimacao:hover{
+    animation: crescendoimagemdireita 1s both;
+}
